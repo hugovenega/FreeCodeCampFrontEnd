@@ -26,6 +26,14 @@ function App() {
     </div>
   );
 }
-
+function Preview({markdown}){
+  return (
+    <div
+    dangerouslySetInnerHTML={{
+      __html: marked(markdown, {renderer: renderer}),
+    }}
+    id='preview'></div>
+  )
+}
 
 export default App;
