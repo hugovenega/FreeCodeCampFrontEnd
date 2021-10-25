@@ -35,20 +35,17 @@ function App() {
             ) : (<div></div>)
             }
           </div> 
-          <div className='row'>
-          <div class="col-xs-4">
+          <div class="d-grid gap-2 d-md-block">
             <button onClick={getNewQuote} className='btn btn-primary'> new Quote</button>
-          </div>
-          <div class="col-xs-4"> 
-            <button className='btn btn-warning'><i className='fa fa-twitter'></i></button>
-          </div>
-          <div class="col-xs-4">
-            <button className='btn btn-danger'><i className='fa fa-tumblr'></i></button>
+          
+          
+            <button class="btn btn-secondary" type="button"><i className='fa fa-twitter'></i></button>
+            <button class="btn btn-secondary" type="button"><i className='fa fa-tumblr'></i></button>
           </div>
           </div>
         </div>  
       </div>
-    </div>
+    
   );
 }
 
